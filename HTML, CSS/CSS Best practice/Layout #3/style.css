@@ -2,10 +2,11 @@
     box-sizing: border-box;
 }
 
-.container{
+.container {
     border: 4px solid lightgray;
     padding: 24px 24px 0 24px;
     display: flex;
+    justify-content: space-between;
 }
 
 .box {
@@ -13,13 +14,17 @@
     margin-bottom: 24px;
 }
 
-.box-small{
-    height: 45px;
-}
-.box-wrapper {
-    width: 50%;
+.box-small {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
-.box-large{
+.box-wrapper {
+    width: 45%;
+    display: block;
+}
+
+.box-large {
     width: 45%;
 }
