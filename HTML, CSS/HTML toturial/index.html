@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section>
         <nav>
-            <img src="./assets/FES.svg" alt="">
+            <img src="./assets/FES.svg" class="logo" alt="">
             <ul>
                 <li><a href="about">About</a></li>
                 <li><a href="dicsord">Discord</a></li>
@@ -17,65 +18,80 @@
             </ul>
         </nav>
         <header>
-            <div>
-                <h1>Best place to learn Frontend</h1>
-                <p>Go from absolute beginner to pro with a simplified process</p>
-                <button>Start Now</button>
+            <div class="row">
+                <div>
+                    <h1>Best place to learn Frontend</h1>
+                    <p class="subheader">Go from absolute beginner to pro with a simplified process</p>
+                    <button>Start Now</button>
+                </div>
+                <figure>
+                    <img src="./assets/laptop.png" alt="Home Page Image">
+                </figure>
             </div>
-            <figure>
-                <img src="./assets/laptop.png" alt="Home Page Image">
-            </figure>
         </header>
     </section>
-
+    
     <main>
         <section id="about">
             <h2>About</h2>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis debitis autem quibusdam doloremque placeat sunt assumenda quas obcaecati! Corrupti incidunt itaque odit quos, quibusdam voluptatibus nam ipsa aspernatur eaque ratione.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis debitis autem quibusdam doloremque placeat sunt assumenda quas obcaecati! Corrupti incidunt itaque odit quos, quibusdam voluptatibus nam ipsa aspernatur eaque ratione.
-                </p>
+            <div class="row">
+                <div class="section__description">
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis debitis autem quibusdam doloremque placeat sunt assumenda quas obcaecati! Corrupti incidunt itaque odit quos, quibusdam voluptatibus nam ipsa aspernatur eaque ratione.
+                        </p>
+                        <p class="section__description--para">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis debitis autem quibusdam doloremque placeat sunt assumenda quas obcaecati! Corrupti incidunt itaque odit quos, quibusdam voluptatibus nam ipsa aspernatur eaque ratione.
+                        </p>
+                    </div>
+                 <figure class="about__image--wrapper">
+                    <img src="./assets/about.jpg" alt="">
+                </figure>
             </div>
-            <figure>
-                <img src="./assets/about.jpg" alt="">
-            </figure>
         </section>
 
-        <section id="Discord"></section>
-        <h2>Discord</h2>
-        <div>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis debitis autem quibusdam doloremque placeat sunt assumenda quas obcaecati! Corrupti incidunt itaque odit quos, quibusdam voluptatibus nam ipsa aspernatur eaque ratione.
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis debitis autem quibusdam doloremque placeat sunt assumenda quas obcaecati! Corrupti incidunt itaque odit quos, quibusdam voluptatibus nam ipsa aspernatur eaque ratione.
-            </p>
-        </div>
-        <figure>
-            <img src="./assets/discord.png" alt="">
-        </figure>
-        <section id="Contact"></section>
-        <h2>Contact</h2>
-        <form action="">
-            <span>Email</span>
-            <input type="text" placeholder="jane@example.com"> 
-            <span>Message</span>
-            <textarea name="Message" placeholder="Nice website, lets connect" cols="30" rows="10"></textarea>
-            <button>Submit</button>
-        </form>
+        <section id="discord">
+            <h2>Discord</h2>
+            <div class="row">
+                <div class="section__description">
+                    <figure class="about__img--wrapper">
+                        <img src="./assets/discord.png" alt="">
+                    </figure>
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis debitis autem quibusdam doloremque placeat sunt assumenda quas obcaecati! Corrupti incidunt itaque odit quos, quibusdam voluptatibus nam ipsa aspernatur eaque ratione.
+                        </p>
+                        <p class="section__description--para">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis debitis autem quibusdam doloremque placeat sunt assumenda quas obcaecati! Corrupti incidunt itaque odit quos, quibusdam voluptatibus nam ipsa aspernatur eaque ratione.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="">
+                <form action="">
+                    <span>Email</span>
+                    <input type="email" placeholder="jane@example.com"> 
+                    <span>Message</span>
+                    <textarea type="Message" placeholder="Nice website, lets connect" cols="30" rows="10"></textarea>
+                    <button>Contact Us!</button>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <img src="./assets/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="">Courses</a>
+        <img class="footer__logo" src="./assets/FES.svg" alt="">
+        <div class="footer__links">
+            <a class="footer__links" href="#about">About</a>
+            <a class="footer__links" href="#discord">Discord</a>
+            <a class="footer__links" href="#contact">Contact</a>
+            <a class="footer__links" href="">Courses</a>
         </div>
         <p>Copyright Frontedn Simplified</p>
     </footer>
 </body>
+
 </html>
